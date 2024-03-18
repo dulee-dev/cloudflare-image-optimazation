@@ -1,0 +1,29 @@
+{
+  "name": "cloudflare-image",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx ./src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "once": "npm run build && npm run start",
+    "lint": "eslint .",
+    "lint.fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "tsx": "^4.7.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1571.0",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.11"
+  }
+}
