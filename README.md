@@ -2,6 +2,6 @@
 
 ## spec
 
-1. get presigned url
+1. create presigned url
 
 2. upload image
