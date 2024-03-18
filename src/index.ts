@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import { getPresignedUploadUrl } from './libs/get-presigned-upload-url';
+import { createPresignedUploadUrl } from './libs/create-presigned-upload-url';
 import 'dotenv/config';
 import { uploadImage } from './libs/upload-image';
 import path from 'path';
@@ -20,7 +20,7 @@ const convertImageFileToFormData = (
 const main = async () => {
   const {
     result: { uploadURL },
-  } = await getPresignedUploadUrl(
+  } = await createPresignedUploadUrl(
     process.env.ACCOUNT_ID,
     process.env.API_TOKEN
   );

@@ -8,7 +8,7 @@ interface Data {
   messages: string[];
 }
 
-export const getPresignedUploadUrl = async (
+export const createPresignedUploadUrl = async (
   accountId: string,
   apiToken: string
 ) => {
